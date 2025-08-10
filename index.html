@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Harmoniza Creative Portfolio - Soothing audio and visuals crafted with code and emotion."
+    />
+    <title>Harmoniza Portfolio</title>
+
+    <!-- Preload important font and hero -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Open+Sans&display=swap"
+      as="style"
+    />
+    <link rel="preload" href="img/hero-bg.jpg" as="image" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- AOS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <!-- Plyr -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
+    <!-- Lightbox -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+    />
+
+    <!-- main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos-custom.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader" aria-hidden="true">
+      <div class="loader">
+        <div class="dot"></div>
+        <p>Harmoniza — loading</p>
+      </div>
+    </div>
+
+    <!-- Theme toggle (accessible) -->
+    <button
+      id="themeToggle"
+      class="theme-toggle"
+      aria-label="Toggle color theme"
+    >
+      <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <header
+      id="hero"
+      class="lazy-bg"
+      data-bg="img/hero-bg.jpg"
+      role="banner"
+      aria-label="Intro"
+    >
+      <div class="hero-overlay">
+        <h1 data-aos="fade-down">Harmoniza</h1>
+        <p data-aos="fade-up">
+          Soothing audio and visuals — crafted with code, creativity, and
+          emotion.
+        </p>
+        <a href="#music" class="btn" data-aos="zoom-in">Explore My Work</a>
+      </div>
+    </header>
+
+    <!-- Search -->
+    <section id="search-bar" data-aos="fade-in">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search projects by name or tag..."
+        aria-label="Search projects"
+      />
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="category" aria-labelledby="music-heading">
+      <h2 id="music-heading">
+        <i class="fa-solid fa-music"></i> Music & Audio
+      </h2>
+      <div class="grid">
+        <article class="card" data-aos="fade-up" data-tags="lofi chill">
+          <img src="img/sample-music.jpg" alt="Music Preview" loading="lazy" />
+          <h3>Dreamy Lofi Beat</h3>
+          <audio class="plyr" controls preload="none">
+            <source src="media/sample-audio.mp3" type="audio/mp3" />
+          </audio>
+          <p>
+            Calm lofi melody with warm chords.
+            <a href="https://drive.google.com" target="_blank" rel="noopener"
+              >Download</a
+            >
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Visuals -->
+    <section id="visuals" class="category" aria-labelledby="visuals-heading">
+      <h2 id="visuals-heading">
+        <i class="fa-solid fa-video"></i> Visuals & Short Films
+      </h2>
+      <div class="grid">
+        <article class="card" data-aos="fade-up" data-tags="visual animation">
+          <a href="media/sample-video.mp4" data-lightbox="visuals">
+            <img
+              src="img/sample-visual.jpg"
+              alt="Visual Preview"
+              loading="lazy"
+            />
+          </a>
+          <p>Lofi animated loop for relaxing scenes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Photography -->
+    <section id="photography" class="category" aria-labelledby="photo-heading">
+      <h2 id="photo-heading"><i class="fa-solid fa-camera"></i> Photography</h2>
+      <div class="grid">
+        <article class="card" data-aos="fade-up" data-tags="nature camping">
+          <a href="img/sample-photo.jpg" data-lightbox="photos">
+            <img
+              src="img/sample-photo.jpg"
+              alt="Nature Camping"
+              loading="lazy"
+            />
+          </a>
+          <p>Nature camping shot with warm tones.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Code -->
+    <section id="code" class="category" aria-labelledby="code-heading">
+      <h2 id="code-heading">
+        <i class="fa-solid fa-code"></i> Web & Code Projects
+      </h2>
+      <div class="grid">
+        <article class="card" data-aos="fade-up" data-tags="code app">
+          <img src="img/sample-code.jpg" alt="Code Project" loading="lazy" />
+          <p>
+            Chord progression generator web app.
+            <a href="https://github.com" target="_blank" rel="noopener"
+              >View Code</a
+            >
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section
+      id="resources"
+      class="category"
+      aria-labelledby="resources-heading"
+    >
+      <h2 id="resources-heading">
+        <i class="fa-solid fa-folder-open"></i> Free Resources
+      </h2>
+      <div class="grid">
+        <article class="card" data-aos="fade-up" data-tags="free loops">
+          <img src="img/sample-resource.jpg" alt="Free Loops" loading="lazy" />
+          <p>
+            Free ambient loop pack.
+            <a href="https://mega.nz" target="_blank" rel="noopener"
+              >Download</a
+            >
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Work in Progress -->
+    <section id="wip" class="category" aria-labelledby="wip-heading">
+      <h2 id="wip-heading">
+        <i class="fa-solid fa-hourglass-half"></i> Work in Progress
+      </h2>
+      <ul>
+        <li>Upcoming 5-track Lofi EP</li>
+        <li>Interactive chord progression app</li>
+        <li>Nature + music fusion short film</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Harmoniza | Ambient visuals & sounds</p>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/aos-init.js"></script>
+    <script src="js/plyr-init.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

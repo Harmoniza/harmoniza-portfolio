@@ -1,0 +1,10 @@
+/* Slight scale effect on fade-up */
+[data-aos="fade-up"] {
+  transform: translateY(20px) scale(0.98);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
